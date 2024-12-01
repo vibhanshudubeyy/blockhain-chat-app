@@ -32,16 +32,16 @@ export const ConnectWallet = async () => {
     }
 };
 
-const fetchContract = (signerOrProvider) => 
+const FetchContract = (signerOrProvider) => 
     new ethers.Contract(ChatAppABI, ChatAppAddress, signerOrProvider);
 
-export const connectingWithContract = async () => {
+export const ConnectingWithContract = async () => {
     try {
         const web3modal = new Web3Modal();
         const connection = await web3modal.connect();
         const provider = new ethers.providers.Web3Provider(connection);
         const signer = provider.getSigner();
-        const contract = fetchContract(signer);
+        const contract = FetchContract(signer);
     } catch (error) {
         console.log(error);
     }
