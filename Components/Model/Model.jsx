@@ -1,6 +1,6 @@
 import React from 'react'
 
-const U = () => {
+const Model = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const U = () => {
   )
 }
 
-export default U
+export default Model
