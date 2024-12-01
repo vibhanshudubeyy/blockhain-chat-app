@@ -15,8 +15,6 @@
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3",
     "hardhat": "^2.22.16"
   }
 }
