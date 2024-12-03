@@ -121,6 +121,9 @@ const NavBar = () => {
           >
             <Image src={images.open} alt='open' width={30} height={30} />
           </div>
+
+
+          
         </div>
       </div>
     </div>
