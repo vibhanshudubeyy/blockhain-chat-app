@@ -26,11 +26,11 @@ const NavBar = () => {
       link: "/",
     },
     {
-      menu: "Terms and Conditions",
+      menu: "FAQ",
       link: "/",
     },
     {
-      menu: "FAQs",
+      menu: "Terms of Use",
       link: "/",
     }
   ];
@@ -123,7 +123,7 @@ const NavBar = () => {
           </div>
 
 
-          
+
         </div>
       </div>
     </div>
