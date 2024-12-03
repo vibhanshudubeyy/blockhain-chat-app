@@ -87,4 +87,22 @@
         padding: 4rem;
         display: none;
     }
+
+    .mobile_menu{
+        display: block;
+        position: fixed;
+        z-index: 1111111;
+        background-color: #292F3F;
+        inset: 0 0 0 0;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .mobile_menu_items {
+        margin-top: 1rem;
+    }
+
+    .mobile_menu_btn {
+        padding-top: 2rem;
+    }
 }
