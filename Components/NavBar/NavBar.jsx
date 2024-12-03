@@ -39,7 +39,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [openModel, setOpenModel] = useState(false);
 
-  const { account, userName, ConnectWallet } = useContext(ChatAppContext);
+  const { createAccount, error, account, userName, ConnectWallet } = useContext(ChatAppContext);
 
   return (
     <div className={Style.NavBar}>
@@ -126,6 +126,27 @@ const NavBar = () => {
 
         </div>
       </div>
+
+      {/* Model Component */}
+
+      {!openModel && (
+          <div className={Style.modelBox}>
+              
+              <Model openModel = {setOpenModel}
+                title = "WELCOME TO"
+                head = "CHAT BUDDY"
+                info = "loremipsum this is you info"
+                smallInfo = "Kindly select your name ..."
+                image = {images.hero}
+                functionName={createAccount}
+                >
+              </Model>
+
+          </div>
+      )}
+
+      {error == "" ? "" : <Error error={error}/>}
+
     </div>
   );
 };
